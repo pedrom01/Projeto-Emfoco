@@ -1,3 +1,7 @@
+/* =========================================================
+   GLOBAL STYLES
+   ========================================================= */
+
 body {
   line-height: 25px;
   font-size: 16px;
@@ -5,6 +9,10 @@ body {
   font-weight: 400;
   color: $text-color;
 }
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
 
 h1,
 h2,
@@ -17,15 +25,24 @@ h6 {
   color: $title-color;
 }
 
+/* =========================================================
+   LISTS
+   ========================================================= */
+
 .list {
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
+
+/* =========================================================
+   LINKS
+   ========================================================= */
 
 a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+
   &:hover,
   &:focus {
     text-decoration: none;
@@ -33,21 +50,35 @@ a {
   }
 }
 
+/* =========================================================
+   ROW
+   ========================================================= */
+
 .row.m0 {
-  margin: 0px;
+  margin: 0;
 }
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
 
 button:focus {
   outline: none;
   box-shadow: none;
 }
 
+/* =========================================================
+   MARGIN UTILITIES
+   ========================================================= */
+
 .mb-15 {
   margin-bottom: 15px;
 }
+
 .mt-10 {
   margin-top: 10px;
 }
+
 .mt-20 {
   margin-top: 20px;
 }
@@ -56,23 +87,30 @@ button:focus {
   margin-top: 25px;
 }
 
-.white_bg {
-  background: #fff !important;
-}
-
 .mt-100 {
   margin-top: 100px;
+
   @media (max-width: 991px) {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
 .mt--100 {
   margin-top: -100px;
+
   @media (max-width: 991px) {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
+
+/* =========================================================
+   BACKGROUNDS
+   ========================================================= */
+
+.white_bg {
+  background-color: $white !important;
+}
+
 .title-bg {
-  background: $title-color;
+  background-color: $title-color;
 }
